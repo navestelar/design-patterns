@@ -21,4 +21,12 @@ public class Employee implements Cloneable {
     public Employee clone() throws CloneNotSupportedException {
         return (Employee) super.clone();
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
 }

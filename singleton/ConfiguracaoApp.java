@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ConfiguracaoApp {
-    private static final String CONFIG_FILE = "app.config";
+    private static final String CONFIG_FILE = "./singleton/app.config";
     private static ConfiguracaoApp instance;
     private Properties propriedades;
 
