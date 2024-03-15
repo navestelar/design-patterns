@@ -43,31 +43,35 @@ public class Computer {
     return HDD;
   }
 
-  public void setHDD(String hDD) {
+  public Computer setHDD(String hDD) {
     HDD = hDD;
+    return this;
   }
 
   public String getRAM() {
     return RAM;
   }
 
-  public void setRAM(String rAM) {
+  public Computer setRAM(String rAM) {
     RAM = rAM;
+    return this;
   }
 
   public boolean isGraphicsCardEnabled() {
     return isGraphicsCardEnabled;
   }
 
-  public void setGraphicsCardEnabled(boolean isGraphicsCardEnabled) {
+  public Computer setGraphicsCardEnabled(boolean isGraphicsCardEnabled) {
     this.isGraphicsCardEnabled = isGraphicsCardEnabled;
+    return this;
   }
 
   public boolean isBluetoothEnabled() {
     return isBluetoothEnabled;
   }
 
-  public void setBluetoothEnabled(boolean isBluetoothEnabled) {
+  public Computer setBluetoothEnabled(boolean isBluetoothEnabled) {
     this.isBluetoothEnabled = isBluetoothEnabled;
+    return this;
   }
 }

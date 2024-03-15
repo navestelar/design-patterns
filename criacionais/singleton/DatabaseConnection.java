@@ -4,9 +4,9 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
     private static Connection con = null;
-    private static final String url = "jdbc:mysql://localhost:3306/org";
-    private static final String user = "root";
-    private static final String pass = "root";
+    private static final String url = "jdbc:postgresql://172.18.150.143:5432/ecommerce";
+    private static final String user = "postgres";
+    private static final String pass = "123456";
 
     private DatabaseConnection() {}
 
