@@ -1,10 +1,11 @@
 package wildcards;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class UpperBoundedWildcards {
   public static void main(String[] args) {
-    List<Integer> integers = List.of(1, 2, 3, 4, 5);
+    List<Integer> integers = List.of(1, 2, 3);
     List<Double> doubles = List.of(1.0, 2.0, 3.0, 4.0, 5.0);
     List<String> strings = List.of("hello", "world", "!");
 
@@ -21,9 +22,24 @@ public class UpperBoundedWildcards {
     printObjects(strings);
     printObjects(integers);
     printObjects(doubles);
+
+    List<Integer> integerList = new ArrayList<>();
+    integerList.add(1);
+    integerList.add(2);
+    integerList.add(3);
+    addValueAndPrint(integerList);
+  }
+  public static void addValueAndPrint(List<? extends Number> list) {
+    for (int i = 0; i < 2; i++) {
+      list.add(i);
+    }
+
+    for (Number value : list) {
+      System.out.println(value + " ");
+    }
   }
 
-  private static void printNumbers(List<?> numberList) {
+  private static void printNumbers(List<? extends Number> numberList) {
     for (Object number : numberList) {
       System.out.println(number);
     }
